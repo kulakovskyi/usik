@@ -775,12 +775,25 @@
         align-items: center
         &-sponsor
           margin: 0 0 35px 0
+          justify-content: space-between
+          width: 100%
           svg
-            width: 58px
-            height: 31.5px
             fill: $magenta !important
+          .plus
+            width: 42px
+            height: 28px
+          .applePay
+            width: 60px
+            height: 28px
+          .googlePlay
+            width: 65px
+            height: 26px
+          .visa-magenta
+            width: 42px
+            height: 28px
           .mastercard
             width: 40px
+            height: 24px
 
           .visa-magenta
             display: block
@@ -823,8 +836,14 @@
           line-height: 12px
       &__copy
         &-sponsor
-          margin: 0px 0 25px 0
-          transform: scale(0.9)
+          margin: 0 0 25px 0
+          svg
+            transform-origin: center
+            transform: scale(0.8)
+          .plus
+            transform-origin: left
+          .mastercard
+            transform-origin: right
         &-google
           max-width: 147px
         &-apple
