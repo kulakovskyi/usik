@@ -15,6 +15,7 @@ $font-din: DINPro-CondLight, sans-serif
 body
   -webkit-tap-highlight-color: rgba(0,0,0,0)
   overscroll-behavior: none
+  background: $blue
   img,
   picture
     max-width: 100%
@@ -37,11 +38,11 @@ body
   height: 100%
   overflow: hidden
   position: relative
-  //background: $blue url('../img/bg-desc.jpg') no-repeat 50% 0/cover
-  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 550px)
-    background: $blue url('../img/bg-desc.jpg') no-repeat 50% 0/cover
+
+  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 451px)
+    background: url('../img/bg-desc.jpg') no-repeat 50% 0/cover
   @media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait)
-    background: $blue url('../img/bg-tab.jpg') no-repeat 50% 0/cover
+    background: url('../img/bg-tab.jpg') no-repeat 50% 0/cover
   @media screen and (max-width: 600px) and (orientation: portrait)
     background: url("../img/bg-mob.jpg") no-repeat 50% 0/cover
   @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
