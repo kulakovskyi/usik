@@ -853,12 +853,17 @@
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
   .usik
+    &__text
+      &-name
+        white-space: nowrap
+      &-enemy
+        white-space: nowrap
     &__image
       top: 83px
     &__pic
       right: -37px
     &__quote
-      top: 5px
+      top: -15px
       right: 108px
     &__logo
       transform: scale(0.45)
@@ -908,17 +913,17 @@
     &__pic
       right: 9px
     &__quote
-      top: -1px
+      top: -16px
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 315px)
   .usik
     &__image
-      top: 39px
+      top: 51px
     &__pic
       right: 49px
     &__quote
       right: 146px
-      top: -3px
+      top: -8px
     &__text
       transform-origin: left center
       transform: scale(0.4)
@@ -950,11 +955,7 @@
   .usik
     &__quote
       right: 91px
-    &__text
-      &-name
-        white-space: nowrap
-      &-enemy
-        white-space: nowrap
+
     &__footer
       height: 37px
       &__text
