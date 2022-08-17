@@ -653,6 +653,11 @@
     &__quote
       top: 355px
 
+@media screen and (max-width: 720px) and (orientation: portrait) and (max-height: 1000px)
+  .usik
+    &__quote
+      top: 247px
+
 /***********************************MOBILE***************************************/
 
 @media screen and (max-width: 600px) and (orientation: portrait)
@@ -678,14 +683,15 @@
     &__quote
       width: 112%
       top: 69%
-      height: 100%
+      height: 69%
     &__image
       width: 100vw
     &__text
       order: 2
       padding: 0 15px
       transform: scale(1)
-      margin: 0
+      margin: 0 auto
+      max-width: 376px
       &-number
         width: 73px
         margin: 0 13px 0 0
@@ -697,9 +703,11 @@
       &-name
         font-size: 25px
         line-height: 32px
+        white-space: nowrap
       &-enemy
         font-size: 25px
         line-height: 35px
+        white-space: nowrap
         img
           max-width: 28px
           margin: 0 5px 0 0
@@ -709,8 +717,6 @@
         font-size: 16px
         line-height: 21px
         padding: 23px 23px 21px
-
-
     &__legal
       position: static
       width: 100%
@@ -737,6 +743,7 @@
       &__text
         flex-direction: column
         align-items: center
+
         &-left
           margin: 0 0 9px 0
           color: $magenta
@@ -772,6 +779,9 @@
             width: 58px
             height: 31.5px
             fill: $magenta !important
+          .mastercard
+            width: 40px
+
           .visa-magenta
             display: block
           .visa-gray
@@ -779,7 +789,7 @@
         &-apple
           max-width: 155px
         &-google
-          max-width: 180px
+          max-width: 174px
 
 @media screen and (max-width: 370px) and (orientation: portrait)
   .usik
@@ -815,8 +825,10 @@
         &-sponsor
           margin: 0px 0 25px 0
           transform: scale(0.9)
-        &-links
-          transform: scale(0.9)
+        &-google
+          max-width: 147px
+        &-apple
+          max-width: 134px
 
 /***********************************MOBILE LANDSCAPE***************************************/
 
