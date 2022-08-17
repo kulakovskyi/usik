@@ -442,23 +442,31 @@
 
 @media screen and (max-width: 1024px) and (orientation: portrait)
   .usik
-    align-items: flex-end
-    padding: 0 0 200px 0
+    flex-direction: column-reverse
+    align-items: center
+    padding: 30px 0 224px 0
+    &__image
+      width: 79vw
+      position: static
+      height: auto
+      picture
+        top: 10px
+        position: static
+        height: auto
+    &__pic
+      position: static
+    &__quote
+      top: 352px
+      width: 108%
+      height: 43vh
+      left: 50%
+      transform: translateX(-50%)
     &__text
       margin: 0 auto
     &__logo
       top: -36px
       svg
         width: 260px
-    &__image
-      height: 95vh
-      width: 66vh
-      top: 10px
-      right: 118px
-    &__quote
-      z-index: 4
-      top: 374px
-      right: -217px
     &__legal
       height: 50px
     &__footer
@@ -487,10 +495,26 @@
           line-height: 13px
           min-width: 72px
 
+@media screen and (max-width: 1024px) and (orientation: portrait) and (min-height: 1360px)
+  .usik
+    padding: 30px 0 285px 0
+    &__text
+      transform: scale(1.2)
+
+@media screen and (max-width: 920px) and (orientation: portrait) and (min-height: 1360px)
+  .usik
+    &__text
+      transform: scale(1)
+
+@media screen and (max-width: 850px) and (orientation: portrait) and (max-height: 1190px)
+  .usik
+    &__image
+      width: 87vw
+
 @media screen and (max-width: 850px) and (orientation: portrait) and (max-height: 1125px)
   .usik
     flex-direction: column-reverse
-    padding-top: 30px
+    padding: 30px 0 190px 0
     align-items: center
     &__image
       width: 95vw
@@ -503,12 +527,11 @@
     &__pic
       position: static
     &__quote
-      top: 352px
-      //right: -33px
-      //width: 110vw
-      //height: 100vh
-      height: 40vh
-      right: -235px
+      top: 379px
+      width: 108%
+      height: 50%
+      left: 50%
+      transform: translateX(-50%)
     &__text
       &-top
         margin: 0 0 33px 0
@@ -553,9 +576,7 @@
     &__image
       width: 84vw
     &__quote
-      top: 309px
-      height: 40vh
-      right: -203px
+      top: 298px
 
 @media screen and (max-width: 820px) and (orientation: portrait) and (max-height: 1027px)
   .usik
@@ -567,9 +588,7 @@
     &__image
       width: 79vw
     &__quote
-      top: 264px
-      height: 46vh
-      right: -123px
+      top: 285px
 
 @media screen and (max-width: 780px) and (orientation: portrait)
   .usik
@@ -595,18 +614,12 @@
     padding: 30px 0 149px 0
     &__quote
       top: 234px
-      height: 48vh
-      right: -77px
+      //height: 48vh
     &__text
       transform-origin: center
       transform: scale(0.9)
     &__image
       width: 68vw
-
-@media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 1025px)
-  .usik
-    &__quote
-      right: -154px
 
 @media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 1010px)
   .usik
@@ -615,13 +628,10 @@
       width: 71vw
     &__quote
       top: 230px
-      right: -123px
 
 @media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 955px)
   .usik
     padding: 30px 0 169px 0
-    &__quote
-      right: -108px
 
 @media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 925px)
   .usik
@@ -629,23 +639,337 @@
       transform-origin: bottom
       transform: scale(0.8)
 
-@media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 910px)
+@media screen and (max-width: 745px) and (orientation: portrait) and (max-height: 1070px)
   .usik
     &__quote
-      right: -64px
+      top: 355px
 
+/***********************************MOBILE***************************************/
 
-@media screen and (max-width: 760px) and (orientation: portrait) and (max-height: 1040px)
+@media screen and (max-width: 600px) and (orientation: portrait)
   .usik
-    &__quote
-      height: 38vh
-      right: -256px
+    overflow-y: scroll
+    flex-direction: column
+    padding: 50px 0 0 0
+    align-items: stretch
 
-@media screen and (max-width: 715px) and (orientation: portrait) and (max-height: 980px)
-  .usik
+    &__logo
+      transform-origin: top left
+      transform: scale(0.42)
+      top: 0
+      svg
+        width: 421px
+    &__pic
+      order: 1
+      width: 100%
+      margin: 0 0 20% 0
+      position: relative
+      right: 0
+      left: 0
     &__quote
-      height: 40vh
-      right: -209px
+      width: 112%
+      top: 69%
+      height: 100%
+    &__image
+      width: 100vw
+    &__text
+      order: 2
+      padding: 0 15px
+      transform: scale(1)
+      margin: 0
+      &-number
+        width: 73px
+        margin: 0 13px 0 0
+      &-date,
+      &-time
+        height: 34px
+        font-size: 17px
+        line-height: 22px
+      &-name
+        font-size: 25px
+        line-height: 32px
+      &-enemy
+        font-size: 25px
+        line-height: 35px
+        img
+          max-width: 28px
+          margin: 0 5px 0 0
+      &-top
+        margin: 0 0 20px 0
+      &-btn
+        font-size: 16px
+        line-height: 21px
+        padding: 23px 23px 21px
+
+
+    &__legal
+      position: static
+      width: 100%
+      height: auto
+      font-size: 6.7vw
+      text-align: center
+      padding: 11px 0 10px
+      order: 4
+    &__footer
+      position: static
+      order: 3
+      height: auto
+      overflow: visible
+      padding: 0
+      background: transparent
+      border: none
+      &__row
+        flex-direction: column
+        align-items: center
+        padding: 30px 15px
+      &__info
+        align-items: flex-start
+        margin: 0 0 35px 0
+      &__text
+        flex-direction: column
+        align-items: center
+        &-left
+          margin: 0 0 9px 0
+          color: $magenta
+          font-size: 38px
+          line-height: 30px
+        &-right
+          margin: 0
+          color: $gray
+          font-size: 10px
+          line-height: 12px
+          min-width: auto
+          br
+            display: none
+      &__plus
+        width: 27px
+        height: 24px
+        border: 1px solid #EDEDED
+        transform: scale(1)
+        color: $gray
+        font-size: 19px
+        line-height: -40px
+        padding: 0px 0px 2px 1px
+        margin: 5px 20px 0
+        &::before,
+        &::after
+          display: none
+      &__copy
+        flex-direction: column
+        align-items: center
+        &-sponsor
+          margin: 0 0 35px 0
+          svg
+            width: 58px
+            height: 31.5px
+            fill: $magenta !important
+          .visa-magenta
+            display: block
+          .visa-gray
+            display: none
+        &-apple
+          max-width: 155px
+        &-google
+          max-width: 180px
+
+@media screen and (max-width: 370px) and (orientation: portrait)
+  .usik
+    &__text
+      &-number
+        width: 70px
+      &-date,
+      &-time
+        height: 32px
+        font-size: 15px
+        line-height: 19px
+      &-name
+        font-size: 21px
+        line-height: 29px
+      &-enemy
+        font-size: 19px
+        line-height: 31px
+    &__footer
+      &__row
+        padding: 20px 15px 20px
+      &__info
+        margin: 0 0 25px 0
+      &__plus
+        margin: 5px 15px 0
+      &__text
+        &-left
+          font-size: 35px
+          line-height: 26px
+        &-right
+          font-size: 9px
+          line-height: 12px
+      &__copy
+        &-sponsor
+          margin: 0px 0 25px 0
+          transform: scale(0.9)
+        &-links
+          transform: scale(0.9)
+
+/***********************************MOBILE LANDSCAPE***************************************/
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__image
+      top: 83px
+    &__pic
+      right: -37px
+    &__quote
+      top: 20px
+    &__logo
+      transform: scale(0.45)
+    &__legal
+      height: 33px
+    &__footer
+      bottom: 32px
+      height: 47px
+      &__plus
+        transform: scale(0.4)
+        margin: 0 -6px
+      &__text
+        &-left
+          font-size: 30px
+        &-right
+          font-size: 10px
+          line-height: 12px
+          min-width: 66px
+      &__copy
+        &-sponsor
+          transform: scale(0.85)
+        &-apple
+          margin: 0 7px 0 0
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 411px)
+  .usik
+    &__image
+      top: 80px
+    &__quote
+      right: 162px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 382px)
+  .usik
+    &__logo
+      transform: scale(0.39)
+    &__image
+      top: 72px
+    &__pic
+      right: -20px
+    &__text
+      transform-origin: left center
+      transform: scale(0.5)
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 347px)
+  .usik
+    &__image
+      top: 44px
+    &__pic
+      right: 9px
+    &__quote
+      top: -1px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 315px)
+  .usik
+    &__image
+      top: 39px
+    &__pic
+      right: 49px
+    &__quote
+      right: 146px
+      top: -3px
+    &__text
+      transform-origin: left center
+      transform: scale(0.4)
+
+@media screen and (max-width: 825px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__footer
+      &__info
+        margin: 0 -19px 0 0
+      &__copy
+        &-sponsor
+          margin: 0
+
+@media screen and (max-width: 765px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__text
+      &-name
+        white-space: nowrap
+      &-enemy
+        white-space: nowrap
+    &__footer
+      height: 37px
+      &__text
+        &-left
+          font-size: 20px
+        &-right
+          font-size: 8px
+          line-height: 9px
+          min-width: 54px
+      &__copy
+        &-links
+          margin: 4px 0 0 0
+        &-sponsor
+          transform: scale(0.7)
+          transform-origin: center
+
+@media screen and (max-width: 670px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__footer
+      &__info
+        margin: 0 -31px 0 0
+      &__copy
+        &-links
+          margin: 4px 0 0 0
+        &-sponsor
+          margin: 0 -25px 0 0
+    &__text
+      transform-origin: left center
+      transform: scale(0.45)
+    &__pic
+      right: 33px
+
+@media screen and (max-width: 640px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__pic
+      right: 59px
+    &__text
+      transform-origin: left center
+      transform: scale(0.45)
+
+@media screen and (max-width: 570px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__text
+      transform-origin: left center
+      transform: scale(0.4)
+    &__pic
+      right: 137px
+    &__footer
+      padding: 0 7px
+      &__info
+        transform-origin: left center
+        transform: scale(0.8)
+        margin: 0 -116px 0 0
+      &__copy
+        &-sponsor
+          transform: scale(0.55)
+          margin: 0 -40px 0 0
+
+@media screen and (max-width: 560px) and (orientation: landscape) and (max-height: 450px)
+  .usik
+    &__text
+      transform: scale(0.35)
+
+
+
+
+
+
+
+
+
 
 
 

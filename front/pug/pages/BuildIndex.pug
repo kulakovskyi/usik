@@ -17,7 +17,7 @@
         .usik__image
             picture.usik__image-main
                 source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/usik-mob.png")
-                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/usik-mob.png")
+                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/usik-landscape.png")
                 source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/usik-tab.png")
                 source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/usik-desc.png")
                 img(src="img/usik-desc.png" alt="Favbet")
@@ -40,21 +40,23 @@
                         use(href='img/applePay.svg#applePay')
                     svg(width="56" height="23")
                         use(href='img/googlePay.svg#googlePay')
-                    svg(width="38" height="25")
+                    svg(width="38" height="25" class='visa-gray')
                         use(href='img/visa.svg#visa')
+                    svg(width="38" height="25" class='visa-magenta')
+                        use(href='img/visa-magenta.svg#visaMagenta')
                     svg(width="21" height="13")
                         use(href="img/mastercard.svg#mastercard")
                 .usik__footer__copy-links
                     a(href='#').usik__footer__copy-link.usik__footer__copy-apple
                         picture.usik__image-main
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/appStore-mob.png")
+                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/appStore-mob.svg")
                             source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/appStore.png")
                             source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/appStore.png")
                             source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/appStore.png")
                             img(src="img/appStore.png" alt="Favbet")
                     a(href='#').usik__footer__copy-link.usik__footer__copy-google
                         picture.usik__image-main
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/googleStore-mob.png")
+                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/googleStore-mob.svg")
                             source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/googleStore.png")
                             source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/googleStore.png")
                             source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/googleStore.png")
